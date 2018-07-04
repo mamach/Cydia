@@ -16,4 +16,13 @@
 ## Service Discovery and Global Configuration Stores
 * 
 
+## References
+[1]: [Docker Ecosystem](https://www.digitalocean.com/community/tutorials/the-docker-ecosystem-an-introduction-to-common-components)
+
+[2]: [Intro to Kubernetes](https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes)
+
+[3]: [Docker Cheat Sheet] (https://github.com/wsargent/docker-cheat-sheet)
+
+[4]: [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 [logo]: https://assets.digitalocean.com/articles/docker_ecosystem/Container-Overview.png "Logo Title Text 2"
