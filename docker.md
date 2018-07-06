@@ -148,6 +148,52 @@ The configuration file.
 * **LABEL** sets the key value metadata to images, containers and daemons.
 
 ### LINKS
+Links are how dockers communicate each other through TCP/IP ports.
+* `docker rm --link` to delete links.
+
+### VOLUMES
+* Docker volumes are free floating file systems. They don't have to be connected to a particular container. 
+
+#### Lifecycle
+* `docker volume create` 
+* `docker volume rm`
+
+#### Info
+* `docker volume ls`
+* `docker volume inspect`
+
+Volumes are useful where Links are not used.    
+* `docker run --volumes-from`
+
+### Exposing ports
+* `-p` is used to map container port to host port.
+
+```shell
+docker run -p 127.0.0.1:$HOSTPORT:$CONTAINERPORT --name CONTAINER -t image_name
+```
+
+using EXPOSE in Dockerfile one can tell docker that container to listen on specified network ports.
+```shell
+EXPOSE <container_port>
+```
+
+### Get IP Address
+* `docker inspect $(d1) | grep -wm1 IPAddress | cut -d '"' -f 4`
+
+### Delete all containers
+* `docker rm -f $(docker ps -qa)`
+
+### Delete all images
+* `docker rmi $(docker images -q)`
+
+### Monitor system resource utilization
+* `docker stats container_id`
+
+### Volumes can be files
+* It is possible to mount files as Volumes.
+* `docker run --rm httpd cat /usr/local/apache2/conf/httpd.conf > httpd.conf` copy file from container.
+* edit file `vim httpd.conf`
+* start container with modified configuration. `docker run --rm -it -v "$PWD/httpd.conf:/usr/local/apache2/conf/httpd.conf:ro" -p "80:80" httpd`
 
 
 ### Advantages
@@ -200,5 +246,7 @@ sh get-docker.sh
 [3]: [Docker Cheat Sheet] (https://github.com/wsargent/docker-cheat-sheet)
 
 [4]: [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+[5]: [Dockers in Atlassian](https://www.atlassian.com/blog/archives/docker-all-the-things-at-atlassian-automation-and-wiring)
 
 [containerOverview]: https://assets.digitalocean.com/articles/docker_ecosystem/Container-Overview.png "Logo Title Text 2"
