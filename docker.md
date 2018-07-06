@@ -73,6 +73,81 @@ Images or just templates for docker containers.
 * `docker images` show all images
 * `docker import` creates an image from tarball.
 * `docker build` create image from Dockerfile
+* `docker commit` create image from container.
+* `docker rmi` remove docker image
+* `docker load` load an image from tar archive as STDIN
+* `docker save` saves an image to tar archive stream to STDOUT
+
+#### Info
+* `docker history` shows history of image
+* `docker tag` tags an image to a name
+
+### Checking Docker version
+* `docker version`
+#### Load/save an Image
+* `docker load < image_name.tar.gz`
+* `docker save image_name:tag_name | gzip > image_name.tar.gz` save an existing image
+
+#### Import/Export a container
+* `cat container_name.tar.gz | docker import - image_name:tag_name` import a container as image from a file.
+* `docker export container_name | gzip > container_name.tar.gz` Export existing container
+
+### Network
+It is good way to configure docker containers to talk to each other without using **ports**.
+
+#### Lifecycle
+* `docker network create`
+* `docker network rm`
+
+#### Info
+* `docker network ls`
+* `docker network inspect`
+
+#### Connection
+* `docker network connect`
+* `docker network disconnect`
+
+```shell
+# create a new bridge network with your subnet and gateway for your ip block
+docker network create --subnet 203.0.113.0/24 --gateway 203.0.113.254 iptastic
+
+# run a nginx container with a specific ip in that block
+$ docker run --rm -it --net iptastic --ip 203.0.113.2 nginx
+
+# curl the ip from any other place (assuming this is a public ip block duh)
+$ curl 203.0.113.2
+```
+
+### Registry and Repository
+A repo is hosted collection of tagged images that together create the file system for a container.
+A registry is  a host -- a server that stores repositories and provides an HTTP API managing the uploading and downloading repositories.
+* ` docker login` to login to registry.
+* `docker logout`
+* `docker search`
+* `docker pull`
+* `docker push`
+
+### Dockerfile
+The configuration file.
+
+#### Instructions
+* .dockerignore
+* **FROM** sets the base image for subsequent restrictions.
+* **RUN** execute any commands in new layer on top of the current image and commit the results.
+* **CMD**  provide defaults for an executing container.
+* **EXPOSE** informs Docker that the container listen on the specified network ports at runtime.
+* **ENV** sets environment variable.
+* **COPY** copies new files or directories to container.
+* **ENTRYPOINT** configures a container that will run as executable.
+* **VOLUME** Creates a mount point for externally mounted volumes or other containers.
+* **USER** set username for `RUN`, `CMD`, `ENTRYPOINT` commands.
+* **WORKDIR** sets the working directory.
+* **ARG** defines build time variable.
+* **ONBUILD** adds a trigger instruction when the image is used as base for another build.
+* **STOPSIGNAL**   sets the system call signal that will be sent to the containers to exit.
+* **LABEL** sets the key value metadata to images, containers and daemons.
+
+### LINKS
 
 
 ### Advantages
