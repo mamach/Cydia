@@ -238,6 +238,54 @@ curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
 
+## Examples
+* Command for running **nginx** server from docker, following command will fetch nginx image to local machine and forward requests from host port 80 to container port 80 and vice versa.
+```
+docker container run --publish 80:80 --detach nginx
+```
+* Command for running **httpd** server from docker, following command will fetch nginx image to local machine and forward requests from host port 8080 to container port 80 and vice versa.
+```
+docker run --publish 8080:80 --detach httpd
+```
+* Command for running **mysql** server from docker, following command will fetch nginx image to local machine and forward request from host port 3306 to container port 3306 and vice versa.
+```
+docker run --publish 3306:3306 --detach -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+
+or
+
+docker run --publish 3306:3306 --detach -env MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+```
+## What's going on in containers
+* `docker container top` process list in one container
+* `docker container inspect` details of one container 
+* `docker container stats` performance statistics of all containers
+
+## Getting a shell inside conatainer
+* `docker container run -it` start new container interactively.
+* `docker container exec -it` run additional command in existing container.
+* `docker container start -ai container_id` start an existing container.
+* `docker container exec -it container_id`
+
+## Docker Network Concepts
+* `docker container run -p`
+* Each container connected to a private virtual network "bridge".
+* Each virtual network routes through NAT firewall on host IP.
+* All containers on a **virtual network**  can talk each other without `-p`.
+* Best practice is to create a new virtual network for each app.
+* `docker container port container_id`
+* `docker container inspect --format '{{.NetworkSettings.IPAddress}}' container_id`
+### CLI Management
+* `docker network ls`
+* `docker network inspect`
+* `docker network create --driver`
+* `docker network connect`
+* `docker network disconnect`
+
+### How containers find each other
+* Docker DNS
+* relying on IP is unstable. 
+* use `--link` to establish connection between containers.
+
 ## References
 [1]: [Docker Ecosystem](https://www.digitalocean.com/community/tutorials/the-docker-ecosystem-an-introduction-to-common-components)
 
