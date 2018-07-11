@@ -286,6 +286,10 @@ docker run --publish 3306:3306 --detach -env MYSQL_RANDOM_ROOT_PASSWORD=yes mysq
 * relying on IP is unstable. 
 * use `--link` to establish connection between containers.
 
+## Cheatsheet
+* `docker ps -aq | xargs --no-run-if-empty docker rm -f` remove all docker containers.  
+
+
 ## References
 [1]: [Docker Ecosystem](https://www.digitalocean.com/community/tutorials/the-docker-ecosystem-an-introduction-to-common-components)
 
