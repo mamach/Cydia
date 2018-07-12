@@ -1,5 +1,10 @@
 # Angular 
 
+## Components
+* `selector`
+* `templateUrl`
+* `styleUrls`
+
 ## Dependency Injection
 * Angular creates **root injector** with **singleton providers**.
 * How angular builds injector tree?
