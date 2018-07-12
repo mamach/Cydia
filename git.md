@@ -6,7 +6,9 @@
 * `git log --pretty=oneline`  changes log output format to other than default.
     * other options are `short`, `full` and `fuller`.
 * `git log --pretty=oneline --graph` shows branch and merge history
-    * `git log --pretty=format:"%h %s" --graph`
+    * `git log --pretty=format:"%h %s" --graph` %s is subject and %s is abbreviated hast
+    * `git log --pretty=format:"%an %h %s" --graph` %an is for author name.
+    * `git log --pretty=format:"%an %h %s" --graph -p` for showing diff of commit 
 * `git log -S function_name` shows commits which are pertaining to only those commits
 ### Limiting
 * `git log -2`
