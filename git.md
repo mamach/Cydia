@@ -16,6 +16,18 @@
 * `git log --grep=some-search-string`
 *  `git log --author=author_name`
 
+## Issues
+* SSL_Error
+```
+git config --global http.sslBackend "openssl"
+```
+and
+```
+git config --global http.sslCAInfo "C:\Program Files\Git\mingw64\ssl\cert.pem"
+```
+Reference:
+[SSL Error Windows](https://stackoverflow.com/questions/49345357/fatal-unable-to-access-https-github-com-xxx-openssl-ssl-connect-ssl-error)
+
 ## Branches
 
 ## References
