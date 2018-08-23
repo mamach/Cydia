@@ -19,6 +19,16 @@ Angular module is used to group following things which are related to common fun
 * services
 * pipes
 
+## Notes
+### Style Guide
+* [Angular Style Guide](https://angular.io/guide/styleguide)
+
+### Property and Event Databinding(@Input and @Output)
+
+### <ng-content> directive
+
+## Facebook architecture in Angular?
+
 
 ## CLI
 * `ng new angular-bootstrap-example --style scss --prefix abe` sample command to create new project with scss as default style and default prefix.
