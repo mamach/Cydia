@@ -55,8 +55,51 @@ within the cluster.
 * Consumers can subscribe to topics and receive message. Consumers can be a independed consumer or part of a consumer group.
 * Kafka helps in ingesting big amounts of data, also works really well for small data in the environment.
 
-# Stream Processing Systems(Apach Spark)
+# Stream Processing Systems
+## Storm
+* Message is processed as soon as it arrives.
+* Low latency.
+* Bigger community.
+
+## Kafka Streams
+* fast
+* light weight.
+
+## FLink
+*less community support.
+
+## Spark
+* based on micro-batch.
+* can switch between micro-batching and continuous streaming.
+
+# Apache Spark
+* can do large scale distributed computations.
+* Open source
+* similar to map reduce.
+* Directed acyclic graph executioln model.
+* operates primarly in memory.
+* supports both micro batch and continuous processing execution modes.
+* Can be used with variety of schedulers like
+	* Hadoop Yarn
+	* Apach Mesos
+	* Kubernetes
+* We can use spark SQL and do 
+	* batch processing
+	* stream processing with spark streaming and Structured streaming.
+	* Machine learning with Mllib
+	* Graph computations with GraphX
+## How Spark works?
+*
+
+# Kafka + Spark
+* Kafka is great for durable and scalable ingestion of streams of events coming from many producers to many consumers.
+* Spark is great for processing large amounts of data including real time and near real time streams of events.
+
+# How to create Kafka and Spark clusters?
 * 
+
+# Example
+*
 
 # References
 [1]. [Distributed Data Streaming](https://lenadroid.github.io/posts/distributed-data-streaming-action.html)
