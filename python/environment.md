@@ -1,3 +1,12 @@
+# Activate
+pip install virtualenv
+virtualenv <virtual_env>
+source <virtual_env>/bin/activate
+
+# Deactivate
+deactivate
+
+
 python -m venv <env-name>
 source env/bin/activate
 <env-name>\scripts\activate.bat
