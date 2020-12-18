@@ -1,10 +1,14 @@
-$ mongorestore.exe -d <database_name> <path>
 
+# Restoring Data from BSON Files Database collections
+```
+mongorestore.exe -d <database_name> <path>
+```
 for e.g., path will be C:/Users/mamach/Desktop/
 
-
+# Taking backup of complete database collections
+```
 mongodumb -d <database_name> -o <output path>
-
+```
 
 # Exporting a collection using command line
 ```
