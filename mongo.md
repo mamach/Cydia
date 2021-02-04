@@ -1,3 +1,8 @@
+# Importing data from csv
+```
+mongoimport -d <db_name> -c <collection_name> --type csv --file file_name.csv --headerline
+```
+
 
 # Restoring Data from BSON Files Database collections
 ```
