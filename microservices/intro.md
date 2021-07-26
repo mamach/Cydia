@@ -32,7 +32,19 @@ A single microservice contains following to implement one feature of our app.
 * 
 
 ### Crazy of storing data
-	
+* Managing data exchange between different services is tricky to handle and prone to crash.
+* This issue can be addressed with asyn based communication.
+* Do action of CRUD in instance and create a event to event to bus.
+* 
+
+### Pros and Cons of Async Communication
+#### Cons
+* Dependencies on other services will effect the other services.
+* Duplication of data(Storage in modern world is relatively free.)
+* Harder to understand
+
+
+#### Pros
 
 # Docker
 
