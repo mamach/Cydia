@@ -18,4 +18,5 @@ chmod 400 server_key.pem
 ssh -i server_key.pem ubuntu@<remote_server_ip>
 ```
 
-
+References
+[1]. [ Convert PPK to PEM ](https://tecadmin.net/convert-ppk-to-pem-using-command/)
