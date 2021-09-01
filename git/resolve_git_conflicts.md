@@ -2,6 +2,12 @@
 * theirs for INCOMING changes.
 * ours for CURRENT changes.
 
+# If already in conflict state
+* Use the following command to accept all incoming changes
+```
+git checkout --theirs .
+```
+
 # Resolving GIT Conflicts
 * Use the following command to accept incoming changes.
 ```
