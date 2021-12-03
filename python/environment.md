@@ -5,6 +5,8 @@
 
 * source <virtual_env>/bin/activate
 
+* virtualenv -p python3 <env_name>
+
 # Deactivate
 deactivate
 
