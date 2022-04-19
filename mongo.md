@@ -3,6 +3,29 @@
 mongoimport -d <db_name> -c <collection_name> --type csv --file file_name.csv --headerline
 ```
 
+# Creating a User
+```
+use admin
+db.createUser({ user: "trudesk", pwd: "trudesk", roles: ["userAdminAnyDatabase"] })
+```
+
+```
+use trudesk
+db.createUser(
+  {
+    user: "trudesk",
+    pwd: "trudesk",
+    roles: [ { role: "dbOwner", db: "trudesk" } ]
+  }
+)
+```
+
+
+# Dropping a database
+```
+use database_name
+db.dropDatabase()
+```
 
 # Restoring Data from BSON Files Database collections
 ```
