@@ -40,3 +40,16 @@
 
 [21]. [Python Machine Learning - Sebastian Raschka]()
 
+[22]. [Grokking Deep Reinforcement Learning - Miguel Morales]()
+
+[23]. [Deep Learning for Computer Vision: Principles and Applications - Mahmoud Hassaballah and Ali Ismail Awad]()
+
+[24]. [Deep Learning by Ian Goodfellow, Yoshua Bengio and Aaron Courville]()
+
+[25]. [Artificial Intelligence by Example - Denis ROthman]()
+
+[26]. [Neural Networks and Deep Learning - Michael Nielsen]()
+
+[27]. [Deep Learning: A Practitioner's Approach - Adam Gibson and Josh Patterson]()
+
+[28]. []()
