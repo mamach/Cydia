@@ -1,3 +1,8 @@
+- Python
+- Perl
+- C/C++
+- SQL
+- JAVA
 - Numpy - basic array operations, advanced operations, linear algebra
 
 - Pandas - Indexing, manipulating, renaming, sorting, and merging of data frames.

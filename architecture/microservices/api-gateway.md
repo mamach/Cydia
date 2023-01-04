@@ -1,9 +1,24 @@
 # API Gateway
 Services in a microservices architecture share common requirements regarding authentication and transportation. **API Gateway** provide a shared layer to handle differences between service protocols and fulfills the requirements of specific clients(browser, mobile app, legacy systems.)
 
+- Express APIGateway - simple and flexible way to route requests
+- Kong - Opensource built on top of nginx.  It offers features such as routing, authentication, caching and limiting.
+- Tyk - Opensource
+- AWS API Gateway - 
+
 # Use-Case
 - One team cna use JSON ov HTTP REST while other team can use gPRC over HTTP/2 or messaging broker like RabbitMQ
 - API Gateway provides a shared layer to handle differences between service protocols and fulfil requirement of clients(mobile/web/etc)
+
+- Reverse proxy
+- Routing
+- Authentication and Authorization
+- Caching - caching responses from backend service to reduce load on backend services.
+- Throttling - Limiting number of requests that clients can make to API.
+- Monitoring and Logging
+
+- Centralized entry point for your API client.
+
 
 ## Microservices and Consumers
 Microservices are a service oriented architecture where teams can design, develop and ship their applications independently. It allows **technology diversity** on various levels of the system. We don't want to implement our internal services in our microservices architecture in a way to support multiple clients and reimplement the same logic all over. This is where the **API Gateway** comes into picture and provides a shared layer to handle differences between service protocols and fulfills the requirements of specific clients.

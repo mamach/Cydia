@@ -1,6 +1,16 @@
-Typescript
-
-Node.js async.js
+# API
+- Typescript
+- Node.js async.js
+- Swagger
+- Unit Testing
+	- Mocha with Chai, should.js
+	- Jest
+	- Ava
+- Dependencies
+	- streams
+	- https://github.com/vercel/micro
+	- https://github.com/senecajs/seneca
+	- https://github.com/brianc/node-postgres
 
 React
 
@@ -25,6 +35,7 @@ Docker
 
 # Cache Service
 Redis
+
 
 
 
