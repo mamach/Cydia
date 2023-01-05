@@ -1,0 +1,53 @@
+version: '1'
+services:
+  mongo:
+      image: mongo:6
+      container_name: mongo-server
+      ports:
+        - 27017:27017
+      volumes:
+      # docker volume create --name=mongodata
+        # - D:\data:/data/db
+        - mongodata:/data/db
+      networks:
+        - some-net
+  web:
+    build: .
+    # command: npm start
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    # restart: on-failure
+    ports:
+      - "3000:3000"
+    # network_mode: "host"
+    environment:
+      port: "3000"
+      DB_URI: mongodb://mongo-server:27017/dataex
+    # links: 
+      # - mongo
+    # depends_on:
+      # - mongo
+    networks:
+      - some-net
+  # python_server:
+  #   build: python-ocr-server/
+  #   volumes:
+  #     - ./python-ocr-server:/usr/src/app
+  #     - ./public:/usr/src/public
+  #   ports:
+  #     - "8000:8000"
+  #   networks:
+  #     - some-net
+networks:
+  some-net:
+    driver: bridge
+    # restart: on-failure
+      # network_mode: "host"
+  #   links: 
+  #     - database
+  # database:
+  #   image: mongo
+volumes:
+  mongodata:
+    external: true
