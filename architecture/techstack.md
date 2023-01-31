@@ -15,23 +15,30 @@
 React
 
 # DataSource
-
+- Redis
 - MongoDB and MySQL
 - PostgreSQL - npm package slonik(battle tested with large data) (https://github.com/gajus/slonik)
 - TimescaleDB
 - Google BigQuery, AWS Redshift
 
+
+
 # Message Broker
 Rabbit MQ
 Kafka
 
+# Alerts and Monitoring
+
+- Prometheus
+- Grafana
+- ELK
+
 API Gateway
 
-ELK
 
-Grafana
 
 Docker
+K8
 
 # Cache Service
 Redis
