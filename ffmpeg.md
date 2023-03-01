@@ -1,5 +1,10 @@
 # ffmpeg
 
+## MKV to mp4 conversion
+```
+ffmpeg -i Waltair_Veerayya.mkv -f mp4 -c:a mp3 Waltair_Veerayya.mp4
+```
+
 ## Convert video to mp4 format with mp3 audio codecs
 ```
 ffmpeg -i filename.extension -c copy -c:a mp3 filename.mp4
