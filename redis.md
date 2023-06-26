@@ -1,4 +1,9 @@
 # Redis
+* Connect to redis with custom host and port
+
+```
+redis-cli -h XXX.XXX.XXX.XXX -p XXXX
+```
 
 # References
 [1]. [twitter-clone](https://redis.io/topics/twitter-clone)
