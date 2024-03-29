@@ -1,0 +1,3 @@
+- learn.hashicorp.com
+- vaultproject.io/docs
+- https://github.com/btkrausen/hashicorp
