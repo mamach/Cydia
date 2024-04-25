@@ -102,8 +102,8 @@ within the cluster.
 *
 
 # References
-[1]. [Distributed Data Streaming](https://lenadroid.github.io/posts/distributed-data-streaming-action.html)
-
+[1]. [ Distributed Data Streaming ](https://lenadroid.github.io/posts/distributed-data-streaming-action.html)
+[2]. [ What is Kafka, and how does it work? ](https://twitter.com/NikkiSiapno/status/1771113682891952564)
 
 
 
