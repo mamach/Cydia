@@ -52,4 +52,4 @@
 
 [27]. [Deep Learning: A Practitioner's Approach - Adam Gibson and Josh Patterson]()
 
-[28]. []()
+[28]. [Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks]()

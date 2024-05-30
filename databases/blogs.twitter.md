@@ -1,0 +1,5 @@
+1. [Database Types](https://blog.bytebytego.com/p/understanding-database-types)
+2. [SQL Interview Questions](https://twitter.com/alifcoder/status/1767219944884957206)
+3. [Separate read/write databases](https://twitter.com/mjovanovictech/status/1757397722951217356)
+4. [The most simple guide to database partioning](https://tigerabrodi.blog/the-most-simple-guide-to-database-partitioning?x-host=tigerabrodi.blog)
+5. [Database Indexing Explained](https://twitter.com/ChrisStaud/status/1759958340086767693)
