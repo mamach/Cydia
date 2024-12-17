@@ -2,6 +2,8 @@
 - ML Interview Book (https://github.com/chiphuyen/ml-interviews-book)
 - PyTorch Best Practices(https://github.com/chenyuntc/pytorch-best-practice)
 
+# AI/ML System Design use cases
+
 # Microservices
 	- Introduction
 	- Cohesion and Coupling: The backbone
@@ -26,8 +28,8 @@
 	- Development
 	- Deployment
 		- e.g., cohere
-# Tensorflow
-# PyTorch
+# Tensorflow or scikit-learn library
+# PyTorch Framework or Keras framework
 
 # Sentiment Analysis
 # Customer Churning

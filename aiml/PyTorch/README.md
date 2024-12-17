@@ -1,3 +1,5 @@
+https://github.com/Coder-World04/Complete-Pytorch-with-Projects-Series-
+
 # Fundamentals
 - OpenSource Machine Learning and DeepLearning framework.
 - 
@@ -31,3 +33,4 @@
 3. https://github.com/mrdbourke/pytorch-deep-learning
 4. [Discussion Forums](https://discuss.pytorch.org/)
 5. [PyTorch Setup](https://pytorch.org/get-started/locally/)
+6. [Complete Pytorch with Projects Series](https://github.com/Coder-World04/Complete-Pytorch-with-Projects-Series-)

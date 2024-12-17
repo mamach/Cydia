@@ -1,0 +1,18 @@
+https://rocket.rs/ - webapps using rust
+
+https://tauri.app/ - alternative to react native, ionic, etc.
+
+https://github.com/rustindia - rust india github community
+
+https://crates.io/crates/diesel - A safe, extensible ORM and Query Builder for PostgreSQL, SQLite, and MySQL
+
+https://www.rust-lang.org/ - rust official website
+
+rustup to install rust tooling packages and dependencies.
+
+cargo -> crates.io (package manager)
+rust fmt - rust formatter
+clippy- crate that contains lints
+rust analyzer - server protocol for rust
+rust doc - generate documentation for the crates created
+
