@@ -1,0 +1,25 @@
+# Books
+- The software architecture elevator
+- Fundamentals of software architecture
+- Software architecture patterns.
+- Foundations of scalability systems.
+- software architecture metrics.
+- software architecture: The hard parts.
+- Learning Systems Thinking
+- Building Multi-tennant SaaS architectures.
+- Head first software architecture.
+- Enabling Microservice success.
+- Serverless deployment on AWS
+- Communication Patterns
+- Building event driven data mesh
+- Building evolutionary architectures.
+- Mastering API architecture
+- RESTful Web API Patterns & Practices Cookbook.
+- Learning Domain-Driven Design
+- Building Microservices.
+- Practical Process Automation.
+- Flow Architectures
+- Building event driven microservices.
+- Monolith to Microservices.
+- Technology strategy patterns.
+- Designing distributed systems.
